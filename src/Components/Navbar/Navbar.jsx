@@ -4,7 +4,7 @@ import './Navbar.css';
 import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
-  const [setMenu] = useState("shop");
+  const [ setMenu] = useState("shop");
   const { getTotalCartItems } = useContext(ShopContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isShopHovered, setIsShopHovered] = useState(false);
@@ -46,9 +46,9 @@ const Navbar = () => {
             listStyle: "none",
           }}>
         </li>
-        <li onClick={() => setMenu("sell")}>
-          Sell 
-        </li>
+        <Link to="/shop" style={{ color: isShopHovered ? "#515151" : "#8a8a8a", textDecoration: "none", fontSize: "16px" }}>
+            Shop 
+          </Link>
         <li onClick={() => setMenu("help")}>
           Help 
         </li>
