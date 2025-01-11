@@ -1,0 +1,117 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fed1ff, #e1ffea22 60%);
+    display: flex;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img {
+    width: 105px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141; 
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    width: 70%;
+    height: 50%;
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 700px) {
+    .hero {
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px;
+        width: 89%;
+        margin-right: 10px;
+        background: linear-gradient(180deg, #fed1ff, #e1ffea22 60%);
+        
+    }
+
+    .hero-left {
+        padding-left: 20px;
+        gap: 5px; 
+        text-align: left;
+        margin-top: 2.5em;
+    }
+
+    .hero-left p {
+        font-size: 40px; 
+        line-height: 1;
+    }
+
+    .hero-left h2 {
+        font-size: 20px;
+    }
+
+    .hero-hand-icon img {
+        width: 70px; 
+    }
+
+    .hero-latest-btn {
+        width: 100%; 
+        height: 50px;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .hero-right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+    .hero-right img {
+        max-width: 150%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-bottom: 10em;
+    } 
+}

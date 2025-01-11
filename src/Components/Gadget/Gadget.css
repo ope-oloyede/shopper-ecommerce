@@ -1,0 +1,52 @@
+.gadget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.gadget h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.gadget hr {
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.deals {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex: wrap;
+}
+
+@media screen and (max-width: 700px) {
+    .gadget {
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-bottom: 30px;
+    }
+
+    .gadget h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .gadget hr {
+        width: 100px;
+        height: 3px;
+    }
+
+    .deals {
+        flex-direction: column;
+        align-items: right;
+        gap: 20px;
+        margin-top: 20px;
+    }
+}
